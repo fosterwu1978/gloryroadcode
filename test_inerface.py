@@ -19,6 +19,4 @@ data = json.dumps({'username':'吴老师'})
 r = requests.post('http://localhost:8080/IDEAmaven/springboot/getUserByJson',data)
 print(r.text)
 
-
-
 assert r.text == '{"userdata":"吴老师 is a man!"}'
